@@ -1,7 +1,7 @@
 package com.jpmc.midascore.entity;
 
 import jakarta.persistence.*;
-import com.jpmc.midascore.entity.UserRecord;  // <-- FIX: use UserRecord
+import com.jpmc.midascore.entity.UserRecord;
 
 @Entity
 public class TransactionRecord {
@@ -13,10 +13,10 @@ public class TransactionRecord {
     private double amount;
 
     @ManyToOne
-    private UserRecord sender;      // <-- FIX
+    private UserRecord sender;
 
     @ManyToOne
-    private UserRecord recipient;   // <-- FIX
+    private UserRecord recipient;
 
     private double incentive;
 
